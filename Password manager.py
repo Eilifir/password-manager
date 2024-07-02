@@ -45,8 +45,6 @@ while True:
         password = values [0]
         password = password.encode("utf-8")
         token = f.encrypt(password)
-        with open(file_path, "w+") as file:
-            last_line = file.readlines()[-1]                
-            file.seek(last_line)
+        with open(file_path, "a+") as file:
             file.write("{}\n".format(token))
 window.close()

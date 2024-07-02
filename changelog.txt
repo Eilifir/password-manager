@@ -1,0 +1,3 @@
+##################################################################################
+Changes of the 02/07/2024 (dd/mm/yyyy):
+fixed a problem when creating a password the key was deleted.
